@@ -10,7 +10,7 @@ def ai(bmi_result, username):
     	"messages": [
     		{
     			"role": "user",
-    			"content": "hello"
+    			"content": f"An extremely short medical advice for {username} with a bmi value of {bmi_result}, address the name in your response"
     		}
     	],
     	"system_prompt": "",

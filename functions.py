@@ -4,20 +4,25 @@ import requests
 
 
 def ai(bmi_result, username):
-    url = "https://open-ai21.p.rapidapi.com/claude3"
+    url = "https://chatgpt-42.p.rapidapi.com/conversationgpt4-2"
     
     payload = {
     	"messages": [
     		{
     			"role": "user",
-    			"content": f"An extremely short medical advice for {username} with a bmi value of {bmi_result}, address the name in your response"
+    			"content": "hello"
     		}
     	],
+    	"system_prompt": "",
+    	"temperature": 0.9,
+    	"top_k": 5,
+    	"top_p": 0.9,
+    	"max_tokens": 256,
     	"web_access": False
     }
     headers = {
     	"x-rapidapi-key": "4d7f06c497msh8ae3ad75c4ed8a9p1c158fjsn39f68bdb2dc7",
-    	"x-rapidapi-host": "open-ai21.p.rapidapi.com",
+    	"x-rapidapi-host": "chatgpt-42.p.rapidapi.com",
     	"Content-Type": "application/json"
     }
     

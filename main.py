@@ -22,7 +22,7 @@ try:
     weight = st.number_input("WEIGHT (kg): ")
     height = st.number_input("HEIGHT (m - e.g 1.89): ")
     bmi_result = weight / (height * height)
-    st.subheader(f"{bmi_result:.2f}")
+    st.subheader(f"BMI VALUE: {bmi_result:.2f}")
     if bmi_result <= 18.5:
         ai(bmi_result, username)
 

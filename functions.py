@@ -20,6 +20,6 @@ def ai(bmi_result, username):
 	
 	response = requests.post(url, json=payload, headers=headers)
 
-    resp = dict(response.json())
-    for k, v in resp.items():
-        st.info(f"{k.upper()}: {v}")
+    	resp = dict(response.json())
+    	for k, v in resp.items():
+        	st.info(f"{k.upper()}: {v}")
